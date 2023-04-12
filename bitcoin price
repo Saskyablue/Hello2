@@ -1,0 +1,25 @@
+import requests
+import json
+from win10toast import toastnotifier
+import time
+
+while True:
+
+t = request.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=GBP").text
+
+
+
+t = json.loads(t)
+
+print(t[bitcoin])
+
+price = str(t["bitcoin"]["gbp"])
+print(price)
+
+
+
+
+
+
+
+
